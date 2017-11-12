@@ -19,7 +19,8 @@ func main() {
 			os.Exit(1)
 		}
 	}()
-	os.Exit(_main())
+	ret:= _main()
+	os.Exit(ret)
 }
 
 func _main() int {
