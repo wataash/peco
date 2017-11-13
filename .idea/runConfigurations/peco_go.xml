@@ -2,7 +2,7 @@
   <configuration default="false" name="peco.go" type="GoApplicationRunConfiguration" factoryName="Go Application" singleton="true">
     <module name="peco" />
     <working_directory value="$PROJECT_DIR$/" />
-    <go_parameters value="-i -tags 'debug'" />
+    <go_parameters value="-i -tags 'debug0'" />
     <envs>
       <env name="PDEBUG_TRACE" value="1" />
     </envs>

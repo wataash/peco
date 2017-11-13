@@ -296,7 +296,10 @@ func (p *Peco) Run(ctx context.Context) (err error) {
 
 	// do this only once
 	var readyOnce sync.Once
-	defer readyOnce.Do(func() { close(p.readyCh) })
+	defer readyOnce.Do(
+		func() {
+		close(p.readyCh)
+		})
 
 	if err := p.Setup(); err != nil {
 		return errors.Wrap(err, "failed to setup peco")
